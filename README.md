@@ -30,10 +30,6 @@ Para evitar que a cada informação digitada no input da pesquisa a API do GitHu
 - **Estilização personalizável**: o **Styled Components**
   permite escrever estilos CSS dentro do JavaScript, transformando-os em componentes e
   melhorando a arquitetura e a manutenção do código.
-- **Gerenciamento simples**: o **react query** simplifica o gerenciamento de
-  dados em aplicativos web, tornando a integração com APIs e o cache de dados
-  mais eficiente e fácil de manter. Oferecendo um controle declarativo e
-  escalável sobre os dados, melhorando a experiência de desenvolvimento.
 - **Consumo de APIs**: com o axios realizamos requisições HTTP em aplicativos
   web, oferecendo recursos avançados para uma comunicação eficiente com
   servidores.

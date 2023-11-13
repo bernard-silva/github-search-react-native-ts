@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.bernardsilva.bergithubbusca"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8a2fb3e1-0528-4b1d-9ef7-1184bb95f6db"
+      }
+    },
+    "owner": "bernard-silva"
   }
 }
