@@ -2,7 +2,7 @@
 
 <h6> Don't speak Portuguese? <a href="https://github.com/bernard-silva/github-search-react-native-ts">Click here</a> to view this page in English.<h6>
 
-#### Objetivo do desafio: Implementar uma página de busca que traga dados do usuário do GitHub e ao clicar na foto retorne mais detalhes e uma lista dos seus repositórios, onde ao tocar em um deles deve ser direcionado ao repositorio no site do GitHub. Também exibir um menu com o histórico dos usuários pesquisados.
+#### **Objetivo do desafio**: Implementar uma página de busca que traga dados do usuário do GitHub e ao clicar na foto retorne mais detalhes e uma lista dos seus repositórios, onde ao tocar em um deles deve ser direcionado ao repositorio no site do GitHub. Também exibir um menu com o histórico dos usuários pesquisados.
 
 ### Preview
 
