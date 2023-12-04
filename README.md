@@ -1,46 +1,50 @@
-# Desafio: App para busca no GitHub
+# Challenge: App to search on GitHub
 
-**Objetivo do desafio**: Implementar uma página de busca que traga dados do usuário do GitHub e ao clicar na foto retorne mais detalhes e uma lista dos seus repositórios, onde ao tocar em um deles deve ser direcionado ao repositorio no site do GitHub. Também exibir um menu com o histórico dos usuários pesquisados.
+<h6> Não fala inglês? <a href="https://github.com/bernard-silva/github-search-react-native-ts/blob/main/README-pt-br.md">Clique aqui</a> para ver essa página em português.<h6>
+
+**Objective of the challenge**: Implement a search page that brings user data from GitHub and when clicking on the photo returns more details and a list of your repositories, where when tapping on one of them you should be directed to the repository on the GitHub website . Also display a menu with the history of searched users.
 
 ### Preview
 
 <p align="center">
-  <img alt="Prewview" src=".github/preview.png" width="100%">
+   <img alt="Preview" src=".github/preview.png" width="100%">
 </p>
 
-<!-- ![Hero Image](./.gitub/hero.png "Hero Image") -->
+### Attention point
 
-### Ponto de atenção
+To prevent the GitHub API from being requested for each piece of information entered in the search input, the React Query library was used together with Zustand and Async Storage, to fetch previously searched data from the application cache, improving performance.
 
-Para evitar que a cada informação digitada no input da pesquisa a API do GitHub seja requisitada foi utilizado a biblioteca React Query juntamente com Zustand e Async Storage, para assim buscar os dados pesquisados anteriormente no cache do aplicativo melhorando a performance.
+### Tools used
 
-### Ferramentas utilizadas
+- <a href="https://reactnative.dev/" target="_blank">React Native (Expo)</a>
+- <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>
+- <a href="https://axios-http.com/" target="_blank">Axios</a>
+- <a href="https://styled-components.com/" target="_blank">Styled Components</a>
+- <a href="https://tanstack.com/query/latest" target="_blank">React Query</a>
+- <a href="https://reactnavigation.org/" target="_blank">React Navigation</a>
+- <a href="https://zustand-demo.pmnd.rs/" target="_blank">Zustand</a>
 
-- <a href="https://axios-http.com/" target="_blank">React Native (Expo)</a>
-- <a href="https://tailwindcss.com/" target="_blank">TypeScript</a>
-- <a href="https://react.dev/" target="_blank">Axios</a>
-- <a href="https://tanstack.com/" target="_blank">Styled Components</a>
-- <a href="https://tanstack.com/" target="_blank">React Query</a>
-- <a href="https://www.react-hook-form.com/" target="_blank">React Navigation</a>
-- <a href="https://www.react-hook-form.com/" target="_blank">Zustand</a>
+### Why the tools?
 
-### O porquê das ferramentas?
+- **Performance**: the marriage of **React Query + Zustand** allows for a more performative use of the application since with React Query it is possible to have more flexible management of server states when dealing with the API, using so the device cache for recent searches and Zustand for data persistence in Async Storage.
+- **Customizable styling**: **Styled Components**
+  allows you to write CSS styles inside JavaScript, turning them into components and
+  improving code architecture and maintenance.
+- **API consumption**: with axios we make HTTP requests in applications
+  web, offering advanced features for efficient communication with
+  servers.
 
-- **Performance**: o casamento do **React Query + Zustand** permite um uso mais performatico do aplicativo uma vez que com o React Query é possível ter um gerenciamento mais flexível dos estados do servidor quando lidando com a API, utilizando assim o cache do dispositivo para pesquisas recentes e o Zustand para persistencia dos dados em Async Storage.
-- **Estilização personalizável**: o **Styled Components**
-  permite escrever estilos CSS dentro do JavaScript, transformando-os em componentes e
-  melhorando a arquitetura e a manutenção do código.
-- **Consumo de APIs**: com o axios realizamos requisições HTTP em aplicativos
-  web, oferecendo recursos avançados para uma comunicação eficiente com
-  servidores.
+### How to execute?
 
-### Como executar?
+> You need to have the data manager
+> packages/dependencies <a href="https://classic.yarnpkg.com/" target="_blank">yarn</a> in
+> your machine and a device emulator (Android or iOS) or scan the QR Code generated on your cell phone with the Expo GO app
 
-> Necessário possuir o gerenciador de
-> pacotes/dependências <a href="https://classic.yarnpkg.com/" target="_blank">yarn</a> em
-> sua máquina e um emulador de dispositivo (Android ou iOS) ou scannear o QR Code gerado em seu celular com o app Expo GO
+```
+git clone https://github.com/bernard-silva/github-search-react-native-ts.git && cd github-search-react-native-ts
+```
 
-- Navegar até a raiz do projeto
-- Instale as dependências com `yarn install`
-- Execute o projeto com `yarn start`
-- Abra no emulador teclando a letra `a` ou scanneando pelo app Expo GO
+- Navigate to the project root
+- Install dependencies with `yarn install`
+- Run the project with `yarn start`
+- Open the emulator by typing the letter `a` or scanning through the Expo GO app
